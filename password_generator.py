@@ -73,3 +73,25 @@ window.config(menu=menu_bar)
 
 # affiche la fenetre
 window.mainloop()
+
+
+#Corrigé TP
+
+def generate_password():
+    password_min = 6
+    password_max = 12
+    all_chars = string.ascii_letters + string.punctuation + string.digits
+    password = "".join(choice(all_chars) for x in range(randint(password_min, password_max)))
+    password_entry.delete(0, END)
+    password_entry.insert(0, password)
+
+    with open("old_passwords.txt", "a+") as file:
+        file.write(password + "\n")
+        file.close()
+
+
+# creer la fenetre
+window = Tk()
+window.title("Générateur de mot de passe")
+window.geometry("720x480")
+window.config(background='#4065A4')

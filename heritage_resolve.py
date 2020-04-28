@@ -6,7 +6,7 @@ class Building:
         self.nb_floors = nb_floors
         print("Bienvenue à la nouvelle ville et aux :", address, "/ ils sont au nombre de :", nb_floors)
 
-
+# fatigue
 
 building1 = Building("immeubles situé au 26 rue Granadine", 4)
 building2 = Building("suermarche situé au 26 rue Granadine", 2)

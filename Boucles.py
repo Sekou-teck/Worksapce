@@ -71,3 +71,5 @@ while running:
 
 # fin du jeu après la boucle
 print("Fin du jeu !")
+
+
